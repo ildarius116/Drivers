@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title|safe }}</title>
+</head>
+<body>
+    <div>
+        <h5>Control buttons:</h5>
+        <form action="/" method="get">
+        <button name="" type="submit">Back to START page</button>
+        </form>
+
+        {% if old_log %}
+            <form action="/read_logs" method="get">
+            <button name="" type="submit">Back to Read LOGs page</button>
+            </form>
+
+        {% else %}
+            {% for file, date in old_logs_dict.items() %}
+                <form action="/read_logs" method="get">
+                <button name="{{ file }}" type="submit">Read LOG from: {{ date }}</button>
+                </form>
+            {% endfor %}
+            <form action="/clear_logs" method="get">
+            <button name="" type="submit">Clear LOGs</button>
+            </form>
+        {% endif %}
+    </div>
+
+    <p><a class="button hexagon" href="#bottom">Go to the Bottom</a></p>
+    <div>
+        <h5>All logs:</h5>
+        {% for log in logs_list %}
+        <li>{{ log }}</li>
+        {% endfor %}
+    </div>
+    <p><a class="button hexagon" href="#top">Go to the Top</a></p>
+
+</body>
+</html>

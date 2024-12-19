@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title|safe }}</title>
+</head>
+<body>
+    <div>
+        <h5>Control buttons:</h5>
+        <form action="/" method="get">
+        <button name="" type="submit">Back to START page</button>
+        </form>
+
+        <form action="/clear_db" method="get">
+        <button name="" type="submit">Clear DataBase</button>
+        </form>
+
+        {% for data in data_in_db %}
+            <form action="/clear_db" method="get">
+            <button name="{{ data.id }}" type="submit">Delete Data with id {{ data.id }}</button>
+            </form>
+        {% endfor %}
+
+        <form action="/send_db" method="get">
+        <button name="" type="submit">Send DataBase forcibly</button>
+        </form>
+
+    </div>
+
+    <div>
+        <h5>All Data in DataBase:</h5>
+        {% if data_in_db %}
+            {% for data in data_in_db %}
+            <li>
+                {% for key, value in data.items() %}
+                <div>
+                    <pre>{{ key }}: {{ value }}</pre>
+                </div>
+                {% endfor %}
+            </li>
+            {% endfor %}
+        {% else %}
+            <a>DataBase is empty!</a>
+        {% endif %}
+
+    </div>
+</body>
+</html>

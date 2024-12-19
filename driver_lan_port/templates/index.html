@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title|safe }}</title>
+</head>
+<body>
+    <div>
+        <h5>Driver status:</h5>
+        {{ status }}
+    </div>
+
+    <div>
+        <h5>Control buttons:</h5>
+        <form action="/read_logs" method="get">
+        <button name="" type="submit">Read LOGs</button>
+        </form>
+
+        <form action="/clear_logs" method="get">
+        <button name="" type="submit">Clear LOGs</button>
+        </form>
+
+        <form action="/read_db" method="get">
+        <button name="" type="submit">Read DataBase</button>
+        </form>
+
+        <form action="/clear_db" method="get">
+        <button name="" type="submit">Clear DataBase</button>
+        </form>
+
+        <form action="/send_db" method="get">
+        <button name="" type="submit">Send DataBase forcibly</button>
+        </form>
+    </div>
+
+    <div>
+        <h5>Last 10 logs:</h5>
+        {% for log in last_logs %}
+        <li>{{ log }}</li>
+        {% endfor %}
+    </div>
+</body>
+</html>

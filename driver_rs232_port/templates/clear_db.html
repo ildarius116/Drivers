@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title|safe }}</title>
+</head>
+<body>
+    <div>
+        <h5>Control buttons:</h5>
+        <form action="/" method="get">
+        <button name="" type="submit">Back to START page</button>
+        </form>
+
+        <form action="/read_db" method="get">
+        <button name="" type="submit">Back to DataBase page</button>
+        </form>
+    </div>
+
+    <div>
+        <h5>Driver status:</h5>
+        {{ status }}
+    </div>
+</body>
+</html>

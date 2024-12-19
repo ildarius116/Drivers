@@ -1,0 +1,93 @@
+{
+  "000000001": {
+    "DriverURL": "http://127.0.0.1:6000",
+    "d4p1:COMDataBits": "8",
+    "d4p1:COMParity": "No",
+    "d4p1:COMPortNumber": "2",
+    "d4p1:COMSpeed": "9600",
+    "d4p1:COMStopBits": "1",
+    "d4p1:ConnectionType": "/dev/ttyUSB",
+    "d4p1:DeviceName": "cd_ruby",
+    "d4p1:DeviceType": "Architect I2000 SR",
+    "d4p1:EthernetAddress": null,
+    "d4p1:EthernetPort": "0",
+    "d4p1:FolderResults": null,
+    "d4p1:FolderWorkList": null
+  },
+  "000000002": {
+    "DriverURL": "http://127.0.0.1:6000",
+    "d4p1:COMDataBits": "8",
+    "d4p1:COMParity": "No",
+    "d4p1:COMPortNumber": "1",
+    "d4p1:COMSpeed": "9600",
+    "d4p1:COMStopBits": "1",
+    "d4p1:ConnectionType": "/dev/ttyUSB",
+    "d4p1:DeviceName": "eleven",
+    "d4p1:DeviceType": "Architect I2000 SR",
+    "d4p1:EthernetAddress": null,
+    "d4p1:EthernetPort": "0",
+    "d4p1:FolderResults": null,
+    "d4p1:FolderWorkList": null
+  },
+  "000000003": {
+    "DriverURL": "http://127.0.0.1:6000",
+    "d4p1:COMDataBits": "8",
+    "d4p1:COMParity": "No",
+    "d4p1:COMPortNumber": "0",
+    "d4p1:COMSpeed": "9600",
+    "d4p1:COMStopBits": "1",
+    "d4p1:ConnectionType": "/dev/ttyUSB",
+    "d4p1:DeviceName": "i2000sr",
+    "d4p1:DeviceType": "Architect I2000 SR",
+    "d4p1:EthernetAddress": null,
+    "d4p1:EthernetPort": "0",
+    "d4p1:FolderResults": null,
+    "d4p1:FolderWorkList": null
+  },
+  "000000004": {
+    "DriverURL": "http://127.0.0.1:6000",
+    "d4p1:host": "192.168.0.101",
+    "d4p1:port": 5100,
+    "d4p1:host_type": "client",
+    "d4p1:encoding_type": "windows-1251",
+    "d4p1:DeviceName": "bc_30s"
+  },
+  "000000005": {
+    "DriverURL": "http://127.0.0.1:6000",
+    "d4p1:host": "192.168.0.103",
+    "d4p1:port": 5100,
+    "d4p1:host_type": "server",
+    "d4p1:encoding_type": "windows-1251",
+    "d4p1:DeviceName": "bs_240"
+  },
+  "000000007": {
+    "DriverURL": "http://127.0.0.1:6000",
+    "d4p1:COMDataBits": "8",
+    "d4p1:COMParity": "No",
+    "d4p1:COMPortNumber": "0",
+    "d4p1:COMSpeed": "9600",
+    "d4p1:COMStopBits": "1",
+    "d4p1:ConnectionType": "/dev/ttyUSB",
+    "d4p1:DeviceName": "lazurite",
+    "d4p1:DeviceType": "Architect I2000 SR",
+    "d4p1:EthernetAddress": null,
+    "d4p1:EthernetPort": "0",
+    "d4p1:FolderResults": null,
+    "d4p1:FolderWorkList": null
+  },
+  "000000008": {
+    "DriverURL": "http://127.0.0.1:6000",
+    "d4p1:COMDataBits": "8",
+    "d4p1:COMParity": "No",
+    "d4p1:COMPortNumber": "0",
+    "d4p1:COMSpeed": "9600",
+    "d4p1:COMStopBits": "1",
+    "d4p1:ConnectionType": "/dev/ttyUSB",
+    "d4p1:DeviceName": "bs_240",
+    "d4p1:DeviceType": "Architect I2000 SR",
+    "d4p1:EthernetAddress": null,
+    "d4p1:EthernetPort": "0",
+    "d4p1:FolderResults": null,
+    "d4p1:FolderWorkList": null
+  }
+}
